@@ -1,0 +1,140 @@
+* {
+     margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito Sans', sans-serif;
+      background-color: #131214;
+}
+
+@keyframes expandInput {
+    from {
+        width: 350px;
+    }
+    to { 
+        width: 450px;
+    }
+}
+
+.header { 
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background-color: #131214;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title img { 
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #3E3D40;
+    border-radius: 500px;
+    background-color: #1D1C1F;
+    width: 350px;
+    transition: all 0.2s ease ;
+}
+.input:focus-within {
+    border-color: #B5A1E5;
+    background-color: rgba(181, 161, 229, 0.1);
+    width: 430px;
+}
+
+.search-icon {
+    color: white;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.input input {
+    border: none;
+    background-color: transparent;
+    color: #DDDAE5;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+}
+
+.btn  {
+    padding: 0.8rem 1.5rem;
+    
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 500px;
+    background-color: #B5A1E5;
+    color: #100E17;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: auto;
+    
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+/* ===== AUTOCOMPLETE TIPO GOOGLE ===== */
+
+.autocomplete {
+  position: absolute;
+  margin-top: 6px;
+  background: #1b1f2a;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  z-index: 999;
+  overflow: hidden;
+}
+
+.autocomplete li {
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.autocomplete li:hover {
+  background: #2a3042;
+}
+
+.city-main {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.city-sub {
+  font-size: 12px;
+  color: #b7b9c6;
+}
+
+
+
+
+
