@@ -1,56 +1,66 @@
+🌦️ Weather App — Real Time Weather Application
 
+Aplicación web de clima desarrollada con React + Vite que consume la OpenWeather API para mostrar información meteorológica en tiempo real, incluyendo clima actual, pronóstico por horas, pronóstico de 5 días y estadísticas destacadas del día.
 
-🌦️ Weather App — React + Vite
+Este proyecto fue creado como práctica avanzada de consumo de APIs, manejo de estado y arquitectura de componentes en React, manteniendo un diseño moderno y animado.
 
-Aplicación web de clima desarrollada con React + Vite, que consume la OpenWeather API para mostrar información meteorológica en tiempo real.
+✨ Características principales
 
-Incluye:
+🔍 Buscador de ciudades con autocompletado tipo Google
 
-Clima actual
+🌡️ Temperatura actual en tiempo real
 
-Pronóstico de 5 días
+🌤️ Condición climática actual
 
-Pronóstico por horas
+📍 Ciudad y país
 
-Highlights del día
-
-Buscador de ciudades con autocompletado tipo Google
-
-🚀 Características
-
-🔍 Búsqueda de ciudades con autocompletado
-
-🌡️ Temperatura actual y condición climática
-
-📅 Fecha, ciudad y país
+📅 Fecha actual formateada
 
 📆 Pronóstico de 5 días
 
-⏰ Pronóstico por horas
+⏰ Pronóstico por horas del día
 
 💨 Velocidad del viento
 
-💧 Humedad, presión, visibilidad y sensación térmica
+💧 Humedad
+
+🌬️ Presión atmosférica
+
+👁️ Visibilidad
+
+🌡️ Sensación térmica
 
 🌅 Hora de amanecer y atardecer
 
-⚡ Interfaz moderna, animaciones y diseño responsivo
+⚡ Interfaz moderna con animaciones
 
-🔗 Datos en tiempo real desde OpenWeather API
+📱 Diseño adaptable
 
-🛠️ Tecnologías
+🧠 Objetivo del proyecto
 
-React 18
+Practicar consumo de APIs reales
 
-Vite
+Manejo de estado con useState y useEffect
 
-JavaScript (ES6+)
+Separación lógica / visual por componentes
 
-OpenWeather API
+Construcción de una app tipo producto real
 
-CSS puro
+Preparar un proyecto presentable para portafolio
 
-Lucide Icons
+🛠️ Tecnologías utilizadas
+
+⚛️ React 18
+
+⚡ Vite
+
+🟨 JavaScript (ES6+)
+
+🌍 OpenWeather API
+
+🎨 CSS puro
+
+🎯 Lucide Icons
 
 📂 Estructura del proyecto
 Weather/
@@ -58,10 +68,13 @@ Weather/
 ├── public/
 │
 ├── src/
-│   ├── assets/          # Imágenes e íconos
+│   │
+│   ├── assets/
+│   │   ├── img/              # Imágenes generales
+│   │   └── weather_icons/    # Íconos del clima
 │   │
 │   ├── components/
-│   │   ├── Style/       # Archivos CSS por componente
+│   │   ├── Style/            # CSS por componente
 │   │   │   ├── header.css
 │   │   │   ├── currentWeather.css
 │   │   │   ├── forecast.css
@@ -74,43 +87,66 @@ Weather/
 │   │   ├── Highlights.jsx
 │   │   └── HourlyForecast.jsx
 │   │
-│   ├── App.jsx          # Estado global y lógica de la API
-│   └── main.jsx
+│   ├── App.jsx               # Lógica principal y estado global
+│   ├── main.jsx
 │
 ├── index.html
 ├── package.json
 ├── vite.config.js
 └── README.md
 
-⚙️ Instalación
-git clone https://github.com/tu-usuario/weather-app.git
-cd weather-app
+⚙️ Instalación y uso
+
+Clona el repositorio:
+
+git clone https://github.com/leo124123/-Weather-App---Create-a-Real-Time-Weather-App.git
+
+
+Entra al proyecto:
+
+cd Weather
+
+
+Instala dependencias:
+
 npm install
+
+
+Ejecuta el servidor de desarrollo:
+
 npm run dev
 
 🔑 API
 
-Este proyecto usa la OpenWeather API.
+Este proyecto utiliza la OpenWeather API.
 
-Debes colocar tu API key en el proyecto:
+Debes crear una cuenta y obtener tu API Key en:
+
+👉 https://openweathermap.org/api
+
+Luego colócala en el proyecto:
 
 const API_KEY = "TU_API_KEY"
 
-
-Puedes crear una gratis en:
-https://openweathermap.org/api
-
 📌 Estado del proyecto
 
-Versión inicial funcional:
+✔️ Funcional
+✔️ Conectado a API real
+✔️ Autocompletado de ciudades
+✔️ Arquitectura modular
+✔️ Listo para portafolio
 
-Autocompletado de ciudades
+Próximas mejoras posibles:
 
-Datos reales en tiempo real
+Guardar ciudades favoritas
 
-Arquitectura limpia por componentes
+Geolocalización real
+
+Modo oscuro automático
+
+Convertir en PWA
 
 👨‍💻 Autor
 
-Desarrollado por: Leo
+Desarrollado por Leo
 Proyecto personal de práctica y portafolio.
