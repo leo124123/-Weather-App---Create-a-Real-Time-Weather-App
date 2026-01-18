@@ -1,16 +1,116 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+🌦️ Weather App — React + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Aplicación web de clima desarrollada con React + Vite, que consume la OpenWeather API para mostrar información meteorológica en tiempo real.
 
-## React Compiler
+Incluye:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clima actual
 
-## Expanding the ESLint configuration
+Pronóstico de 5 días
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Pronóstico por horas
+
+Highlights del día
+
+Buscador de ciudades con autocompletado tipo Google
+
+🚀 Características
+
+🔍 Búsqueda de ciudades con autocompletado
+
+🌡️ Temperatura actual y condición climática
+
+📅 Fecha, ciudad y país
+
+📆 Pronóstico de 5 días
+
+⏰ Pronóstico por horas
+
+💨 Velocidad del viento
+
+💧 Humedad, presión, visibilidad y sensación térmica
+
+🌅 Hora de amanecer y atardecer
+
+⚡ Interfaz moderna, animaciones y diseño responsivo
+
+🔗 Datos en tiempo real desde OpenWeather API
+
+🛠️ Tecnologías
+
+React 18
+
+Vite
+
+JavaScript (ES6+)
+
+OpenWeather API
+
+CSS puro
+
+Lucide Icons
+
+📂 Estructura del proyecto
+Weather/
+│
+├── public/
+│
+├── src/
+│   ├── assets/          # Imágenes e íconos
+│   │
+│   ├── components/
+│   │   ├── Style/       # Archivos CSS por componente
+│   │   │   ├── header.css
+│   │   │   ├── currentWeather.css
+│   │   │   ├── forecast.css
+│   │   │   ├── highlights.css
+│   │   │   └── hourlyForecast.css
+│   │   │
+│   │   ├── Header.jsx
+│   │   ├── CurrentWeather.jsx
+│   │   ├── Forecast.jsx
+│   │   ├── Highlights.jsx
+│   │   └── HourlyForecast.jsx
+│   │
+│   ├── App.jsx          # Estado global y lógica de la API
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+⚙️ Instalación
+git clone https://github.com/tu-usuario/weather-app.git
+cd weather-app
+npm install
+npm run dev
+
+🔑 API
+
+Este proyecto usa la OpenWeather API.
+
+Debes colocar tu API key en el proyecto:
+
+const API_KEY = "TU_API_KEY"
+
+
+Puedes crear una gratis en:
+https://openweathermap.org/api
+
+📌 Estado del proyecto
+
+Versión inicial funcional:
+
+Autocompletado de ciudades
+
+Datos reales en tiempo real
+
+Arquitectura limpia por componentes
+
+👨‍💻 Autor
+
+Desarrollado por: Leo
+Proyecto personal de práctica y portafolio.
