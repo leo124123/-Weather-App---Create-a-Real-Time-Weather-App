@@ -5,7 +5,7 @@ import Forecast from "./components/Forecast.jsx";
 import Highlights from "./components/Highlights.jsx";
 import HourlyForecast from "./components/HourlyForecast.jsx";
 
-const API_KEY = "9a995953d68d77032c7434a5db11a545";
+const API_KEY = "TU_API_KEY_AQUI";
 
 export default function App() {
 
@@ -144,7 +144,7 @@ export default function App() {
         onSearch={setCity} 
         onLocation={fetchWeatherByLocation}
       />
-
+             
       {loading && <p style={{ textAlign: "center" }}>Cargando...</p>}
       {error && <p style={{ textAlign: "center", color: "red" }}>{error}</p>}
 
