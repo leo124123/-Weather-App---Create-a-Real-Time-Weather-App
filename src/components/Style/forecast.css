@@ -84,16 +84,90 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 480px) {
+
+
+
+
+
+
+
+@media (max-width: 1280px) {
   .forecast {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 300px;
+    margin-top: 24px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .forecast {
+    position: relative;
     width: 100%;
+    max-width: 400px;
+    margin: 24px auto;
+    padding: 18px;
   }
 
-  .day-card {
-    padding: 10px 14px;
+  .days {
+    gap: 12px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .forecast {
+    padding: 14px;
+    border-radius: 16px;
   }
 
   .temp {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .weather-icon {
+    width: 20px;
+    height: 20px;
   }
 }
+
+
+
+
+@media (max-width: 768px) {
+  .forecast {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .forecast-title {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .day-card {
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .day {
+    text-align: left;
+    font-size: 13px;
+  }
+}
+

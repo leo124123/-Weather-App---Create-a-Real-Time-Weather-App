@@ -5,7 +5,7 @@ import Forecast from "./components/Forecast.jsx";
 import Highlights from "./components/Highlights.jsx";
 import HourlyForecast from "./components/HourlyForecast.jsx";
 
-const API_KEY = "TU_API_KEY_AQUI";
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 export default function App() {
 

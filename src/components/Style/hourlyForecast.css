@@ -95,3 +95,85 @@
 .today-card svg[data-lucide="cloud"] {
   color: #ffffff;
 }
+
+
+/*Responsive*/ 
+
+
+@media (max-width: 1280px) {
+  .today {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 28px;
+    margin-left: auto;
+  }
+
+  .today-row {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .today {
+    max-width: 92%;
+    margin: 32px auto;
+    padding: 26px;
+    border-radius: 24px;
+  }
+
+  .today-row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .today-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .today {
+    margin: 24px auto;
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .today-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .today-card {
+    padding: 18px 10px;
+    border-radius: 18px;
+  }
+
+  .today-card strong {
+    font-size: 16px;
+  }
+
+  .hour {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .today {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .today-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .today-row {
+    gap: 12px;
+  }
+
+  .today-card strong {
+    font-size: 15px;
+  }
+}
